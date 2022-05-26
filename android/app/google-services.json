@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "319060293355",
+    "project_id": "recommendationapp-4162a",
+    "storage_bucket": "recommendationapp-4162a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319060293355:android:bd895029886b720340f0ae",
+        "android_client_info": {
+          "package_name": "com.Bhanu.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319060293355-6otsnbcp8g5u6jpcqo4h3hnp18illpmg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0bRpmgVMJD1fQELYJpd8nrVMICz6ZX2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "319060293355-6otsnbcp8g5u6jpcqo4h3hnp18illpmg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "319060293355-0hh3otss8j5kej42ia680ec04a5mnlq0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Bhanu.myapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
