@@ -1,29 +1,53 @@
-import 'package:myapp/widgets/request.dart';
 import 'package:flutter/material.dart';
-class Recommendations extends StatefulWidget {
-  const Recommendations({Key? key}) : super(key: key);
+import '../utils/helper_widgets.dart';
+import '../utils/text.dart';
+import 'package:myapp/widgets/fetch.dart';
 
+
+class Recommendations extends StatefulWidget {
+  late Future<List<Movie>> favmovies;
+  Recommendations({Key? key, required this.favmovies}) : super(key: key);
   @override
   State<Recommendations> createState() => _RecommendationsState();
 }
 
 class _RecommendationsState extends State<Recommendations> {
+  get favmovies => widget.favmovies;
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        title: const modified_text(
+            text: 'Movies Recommendation', size: 15.0, color: Colors.white),
+        centerTitle: true,
+      ),
+      body: Container(
+        height: 270,
+        child: ListView.builder(
+          itemCount: 10,
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            return InkWell(
+              child: Column(
+                children: [
+                  Container(
+                    width: 140,
+                    child: modified_text(
+                        text: (favmovies), size: 15.0, color: Colors.white),
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+      ),
+    );
   }
 }
 
-Future<Widget> RecommendList(String name) async {
-  var data = await getData(Uri.parse('https://bioscope-api.herokuapp.com/movie?title=$name'));
-  List decodedData = jsonDecode(data);
-  itemBuilder: (context, index){
-    return InkWell(
-        onTap: () {
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => Recommendations(
-              )));
-    }
-  }
+// var data = await getData(uri.parse('https://bioscope-api.herokuapp.com/movie?title=$name'));
+// var decodedData = jsonDecode(data);
+// print(decodedData['query']);

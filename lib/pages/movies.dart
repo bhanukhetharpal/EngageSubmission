@@ -54,7 +54,7 @@ class _MoviesState extends State<Movies> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: const modified_text(
-            text: 'Movies Recommendation', size: 15.0, color: Colors.white),
+            text: 'Like Your Favourite Movies and TV Shows', size: 15.0, color: Colors.white),
         centerTitle: true,
       ),
       body: ListView(
