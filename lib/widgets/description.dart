@@ -84,7 +84,7 @@ class Description extends StatelessWidget {
 
           ElevatedButton.icon(onPressed: (){
             Globals.addData(name);
-            print(Globals.getMyObjectsList());
+            print(Globals.getMyFavMovies());
            },
             icon: const Icon(Icons.favorite, color: Colors.red,size: 24.0),
             label: const Text(''),

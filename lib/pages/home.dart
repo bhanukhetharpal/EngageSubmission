@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/styles/all.dart';
+import 'package:myapp/utils/text.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -14,7 +15,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
-        title: const Text('Self Care App'),
+        title: modified_text(
+            text: 'Self Care App', color: Colors.white, size: 25.0),
         centerTitle: true,
         backgroundColor: Colors.transparent,
       ),
@@ -32,4 +34,3 @@ class _HomeState extends State<Home> {
     );
   }
 }
-

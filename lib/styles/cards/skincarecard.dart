@@ -9,7 +9,7 @@ class skincarecard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 8.0,
-      color: Colors.green[50],
+      color: Colors.lightGreen[200],
       child: Column(
         children: <Widget>[
           Image.asset('Assets/Skincareproducts.jpg',

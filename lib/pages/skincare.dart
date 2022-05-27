@@ -10,11 +10,11 @@ class _SkincareState extends State<Skincare> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[100],
+      backgroundColor: Colors.lightGreen[200],
       appBar: AppBar(
-        title: const Text('Skin Care Recommendation'),
+        title: const Text('Coming Soon'),
         centerTitle: true,
-        backgroundColor: Colors.lightGreen[400],
+        backgroundColor: Colors.lightGreen[200],
       ),
     );
   }

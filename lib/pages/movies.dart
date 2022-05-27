@@ -54,9 +54,9 @@ class _MoviesState extends State<Movies> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.red[800],
         title: const modified_text(
-            text: 'Like Your Favourite Movies and TV Shows', size: 15.0, color: Colors.white),
+            text: 'Like Your Favourite Movies and TV Shows', size: 25.0, color: Colors.white),
         centerTitle: true,
       ),
       body: ListView(
@@ -66,11 +66,9 @@ class _MoviesState extends State<Movies> {
           TV(tv: tv),
           ElevatedButton(
               onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) =>  Recommendations(favmovies: Globals.getMyObjectsList())),
-                );
-              }, child: Text('Recommend Me Movies pls'),
+                Navigator.pushNamed(context, '/movies/recommendations');
+              }, child: modified_text(size: 20, text: 'Recommend Me Movies', color: Colors.white),
+              style:  ElevatedButton.styleFrom( primary: Colors.red[800]),
           ),
         ],
       ),

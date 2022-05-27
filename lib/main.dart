@@ -6,6 +6,8 @@ import 'package:myapp/pages/loading.dart';
 import 'package:myapp/pages/home.dart';
 import 'package:myapp/theme/theme_constants.dart';
 import 'package:myapp/theme/theme_manager.dart';
+import 'package:myapp/widgets/Recommendation.dart';
+
 
 ThemeManager _themeManager = ThemeManager();
 void main() {
@@ -52,6 +54,7 @@ class _MyAppState extends State<MyApp> {
         '/movies': (context) => const Movies(),
         '/books': (context) => const Books(),
         '/skincare': (context) => const Skincare(),
+    '/movies/recommendations': (context) => Recommendations(),
       },
     );
   }
