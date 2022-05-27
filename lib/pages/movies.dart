@@ -1,10 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/widgets/Recommendation.dart';
 import 'package:myapp/widgets/toprated.dart';
 import 'package:myapp/widgets/trending.dart';
 import 'package:myapp/widgets/tv.dart';
 import 'package:myapp/utils/text.dart';
 import 'package:tmdb_api/tmdb_api.dart';
+import 'package:myapp/widgets/globals.dart';
 
 class Movies extends StatefulWidget {
   const Movies({Key? key}) : super(key: key);
@@ -62,6 +64,14 @@ class _MoviesState extends State<Movies> {
           TopRated(toprated: topratedmovies),
           TrendingMovies(trending: trendingmovies),
           TV(tv: tv),
+          ElevatedButton(
+              onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) =>  Recommendations(favmovies: Globals.getMyObjectsList())),
+                );
+              }, child: Text('Recommend Me Movies pls'),
+          ),
         ],
       ),
     );

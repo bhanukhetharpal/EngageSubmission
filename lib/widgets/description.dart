@@ -1,14 +1,11 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:myapp/utils/text.dart';
 import 'package:myapp/utils/helper_widgets.dart';
-import 'package:myapp/widgets/fetch.dart';
-import 'package:myapp/widgets/Recommendation.dart';
+import 'package:myapp/widgets/globals.dart';
 
 class Description extends StatelessWidget {
   final String name, description, bannerurl, posterurl, vote, launch_on;
   final int movieid;
-
   //final List genres;
   const Description(
       {Key? key,
@@ -86,9 +83,8 @@ class Description extends StatelessWidget {
           ),
 
           ElevatedButton.icon(onPressed: (){
-            Future<List<Movie>> Recommended_movies;
-            Recommended_movies = fetchMovies(name);
-            Recommendations( favmovies: Recommended_movies);
+            Globals.addData(name);
+            print(Globals.getMyObjectsList());
            },
             icon: const Icon(Icons.favorite, color: Colors.red,size: 24.0),
             label: const Text(''),
