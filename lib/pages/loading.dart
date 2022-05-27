@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/utils/helper_widgets.dart';
 import 'package:myapp/utils/text.dart';
 
 class Loading extends StatefulWidget {
@@ -21,8 +22,7 @@ class _LoadingState extends State<Loading> {
       ),
       body: Column(
         children: <Widget>[
-          Center(
-            child: TextButton.icon(
+            TextButton.icon(
               onPressed: () {
                 Navigator.pushNamed(context, '/home');
               },
@@ -30,8 +30,19 @@ class _LoadingState extends State<Loading> {
               label:  modified_text(
                   text: 'Home Page', color: Colors.white, size: 35.0),
             ),
+          Expanded(
+            child: Container(
+              constraints: const BoxConstraints.expand(),
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                    image: NetworkImage('https://media.istockphoto.com/photos/self-care-word-on-wood-cubes-on-green-nature-background-picture-id1323129896?b=1&k=20&m=1323129896&s=170667a&w=0&h=_hR6fpap9B9mOhwIBsyPeMouYz9sZbw1-HDzt1ogdD4='),
+                     fit: BoxFit.cover
+                ),
+            ),
+
+
+            ),
           ),
-          Image.asset('Assets/Self_caretheme.jpg', fit: BoxFit.fill),
         ],
       ),
     );

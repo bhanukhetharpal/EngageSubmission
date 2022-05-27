@@ -70,35 +70,4 @@ class _RecommendationsState extends State<Recommendations> {
     );
   }
 }
-//         height:MediaQuery.of(context).size.height ,
-//         width: MediaQuery.of(context).size.width,
-//         child: ListView.builder(
-//           itemCount: recmovies.length,
-//           scrollDirection: Axis.vertical,
-//           itemBuilder: (context, index) {
-//             return Card(
-//               child: Container(
-//                 child: Column(
-//                   children: [
-//                     modified_text(
-//                         text: recmovies[index].movieId,
-//                         size: 2.0,
-//                         color: Colors.white),
-//                     modified_text(
-//                         text: recmovies[index].Name,
-//                         size: 2.0,
-//                         color: Colors.white),
-//                     modified_text(
-//                         text: recmovies[index].Genres,
-//                         size: 2.0,
-//                         color: Colors.white),
-//                   ],
-//                 ),
-//               ),
-//             );
-//           },
-//         ),
-//       ),
-//     );
-//   }
-// }
+

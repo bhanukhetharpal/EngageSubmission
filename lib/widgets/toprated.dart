@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils/helper_widgets.dart';
 import 'package:myapp/utils/text.dart';
 import 'package:myapp/widgets/description.dart';
+import 'package:myapp/widgets/globals.dart';
 
 class TopRated extends StatelessWidget {
   final List toprated;

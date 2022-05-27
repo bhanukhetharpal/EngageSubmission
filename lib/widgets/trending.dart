@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils/helper_widgets.dart';
 import 'package:myapp/utils/text.dart';
 import 'package:myapp/widgets/description.dart';
+import 'package:myapp/widgets/globals.dart';
 
 class TrendingMovies extends StatelessWidget {
   final List trending;
@@ -40,6 +41,11 @@ class TrendingMovies extends StatelessWidget {
                                   launch_on: trending[index]['release_date'],
                                   movieid: trending[index]['id'])));
                                  // genres: genres)));
+                    },
+                    onHover: (isHovering) {
+                      if (isHovering) {
+                        Globals.addData(trending[index]['title']);
+                      }
                     },
                     child: trending[index]['title'] != null
                         ? Container(
