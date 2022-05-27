@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/theme/theme_manager.dart';
 import 'package:myapp/utils/text.dart';
-
-ThemeManager _themeManager = ThemeManager();
 
 class Loading extends StatefulWidget {
   const Loading({Key? key}) : super(key: key);
@@ -21,13 +18,6 @@ class _LoadingState extends State<Loading> {
             text: 'Self Care App', color: Colors.white, size: 25.0),
         centerTitle: true,
         backgroundColor: Colors.lightGreen[300],
-        actions: [
-          Switch(
-              value: _themeManager.themeMode == ThemeMode.dark,
-              onChanged: (newValue) {
-                _themeManager.toggleTheme(newValue);
-              })
-        ],
       ),
       body: Column(
         children: <Widget>[

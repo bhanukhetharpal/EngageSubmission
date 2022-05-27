@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils/helper_widgets.dart';
-import '../utils/text.dart';
 import 'package:myapp/widgets/fetch.dart';
 import 'package:myapp/widgets/globals.dart';
 
