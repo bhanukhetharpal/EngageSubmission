@@ -80,6 +80,10 @@ Takes the name of the movie and returns the recommended movies with their Match 
 - [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 - [The Indian Movie Database](https://www.kaggle.com/datasets/pncnmnp/the-indian-movie-database)
 
+### Future Scope of the App
+Due to shortage of time these feautures couldn't be incoorporated but planned to do so soon
+- Book Recommendation with API using Spark ALS algorithm.
+- Skincare Recommendation using Face Recognition
 
 ## Resources Used
 - https://nordicapis.com/how-to-create-an-api-using-the-flask-framework/
