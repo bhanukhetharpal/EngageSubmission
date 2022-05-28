@@ -31,7 +31,7 @@
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 ## Algorithms Used 
-- cosine_similarity
+- Cosine_similarity
 - CountVectorizer
 - TfidfVectorizer
 
@@ -43,7 +43,7 @@ To install and run the project on your local system, following are the requireme
 ### Prerequisites
 GIT, FLUTTER, Android Studio
 
-### INSTALLATION
+### Installation
 - Clone the repo. 
 - Have a virtual device set up in Android Studio
 - Run main.dart
