@@ -19,8 +19,6 @@ class _MoviesState extends State<Movies> {
   List trendingmovies = [];
   List topratedmovies = [];
   List tv = [];
-  // List genredetails = [];
-  // List tvgenredeatils = [];
   final String apikey = '22c55ca76a9630ee9c743c933b983d9f';
   final readaccesstoken =
       'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMmM1NWNhNzZhOTYzMGVlOWM3NDNjOTMzYjk4M2Q5ZiIsInN1YiI6IjYyOGUxZTE4MTQ5NTY1MDA2NjMxZmMzMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UGqasStjnEW0EqjXUK-iQignRf7D9yfmgvKjOgtXG2M';
@@ -37,16 +35,13 @@ class _MoviesState extends State<Movies> {
     Map trendingresult = await tmdbWithCustomLogs.v3.trending.getTrending();
     Map topratedresult = await tmdbWithCustomLogs.v3.movies.getTopRated();
     Map tvresult = await tmdbWithCustomLogs.v3.tv.getPopular();
-   // Map genreresult = await tmdbWithCustomLogs.v3.movies.getDetails($movieid);
-    //Map tvgenreresult = await tmdbWithCustomLogs.v3.tv.getDetails($movieid);
+
     setState(() {
       trendingmovies = trendingresult['results'];
       topratedmovies = topratedresult['results'];
       tv = tvresult['results'];
-      // genredetails = genreresult['genres'];
-      // tvgenredeatils = tvgenreresult['genres'];
     });
-   // print(genreresult);
+
   }
 
   @override

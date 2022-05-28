@@ -42,11 +42,6 @@ class TrendingMovies extends StatelessWidget {
                                   movieid: trending[index]['id'])));
                                  // genres: genres)));
                     },
-                    onHover: (isHovering) {
-                      if (isHovering) {
-                        Globals.addData(trending[index]['title']);
-                      }
-                    },
                     child: trending[index]['title'] != null
                         ? Container(
                             width: 140,

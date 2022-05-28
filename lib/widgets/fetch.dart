@@ -7,24 +7,28 @@ class Movie {
   final String movieId;
   final String Name;
   final String Genres;
+  final String Match_Score;
 
   const Movie({
     required this.movieId,
     required this.Name,
     required this.Genres,
+    required this.Match_Score,
   });
 
   factory Movie.fromJson(Map<String, dynamic> json) {
     return Movie(
+      Genres: json['Genres'] as String,
+      Match_Score: json['Match_Score'] as String,
       movieId: json['Movie_Id'] as String,
       Name: json['Name'] as String,
-      Genres: json['Genres'] as String,
+
     );
   }
 }
   Future<List<Movie>> fetchMovies(String movie_title) async {
     final response = await http.get(Uri.parse(
-        'https://bioscope-api.herokuapp.com/movie?title=insert-movie-name/movie?title=$movie_title'));
+        'https://bhanukhetharpal.pythonanywhere.com/movie?title=$movie_title'));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,

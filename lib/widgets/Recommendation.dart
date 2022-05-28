@@ -49,14 +49,16 @@ class _RecommendationsState extends State<Recommendations> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
               Text(
-              "${snapshot.data![index].Name}",
+              "Movie Name: ${snapshot.data![index].Name}",
                 style: TextStyle(
                   fontFamily: 'Koulen',
                   fontSize: 18.0,
                 ),
               ),
                 addVerticalSpace(10),
-                  Text("${snapshot.data![index].Genres}"),
+                  Text("Genres: ${snapshot.data![index].Genres}"),
+                  addVerticalSpace(10),
+                 // Text("Match Score: ${snapshot.data![index].Match_Score}"),
                 ],
               ),
             ),
