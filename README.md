@@ -50,8 +50,11 @@ GIT, FLUTTER, Android Studio
 
 ## Navigating Through The App
 ### Home Screen
+ ![Main Page](images/main.jpeg?raw=true)   ![Home Page](images/home.jpeg?raw=true) 
 ### Movie and TV Shows Screen
+![Tiles Page](images/tiles.jpeg?raw=true)
 ### Description Tiles with Heart Button
+![Descp Page](images/movie_tile.jpeg?raw=true)
 ### Recommended Movies Screen 
 
 ## API Reference
