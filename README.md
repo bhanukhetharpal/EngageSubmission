@@ -30,6 +30,10 @@
 ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
+## Algorithms Used 
+-
+[PPT for Algorithm Explanation](https://www.canva.com/design/DAFCANVAQmo/zpe8ZLAlU48urNI9ZxWvNg/view?utm_content=DAFCANVAQmo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+
 ## Getting Started
 To install and run the project on your local system, following are the requirements:
 
@@ -47,8 +51,6 @@ GIT, FLUTTER, Android Studio
 ### Description Tiles with Heart Button
 ### Recommended Movies Screen 
 
-## Algorithms Used 
-[PPT for Algorithm explanation](https://www.canva.com/design/DAFCANVAQmo/zpe8ZLAlU48urNI9ZxWvNg/view?utm_content=DAFCANVAQmo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 ## API Reference
 Built the movie recommendation API using python and deployed on Python Anywhere. This API has at its centre the algorithm that I have used. 
 
@@ -63,11 +65,11 @@ https://bhanukhetharpal.pythonanywhere.com/movie?title=$moviename
 | :-------- | :------- | :-------------------------------- |
 | `title`      | `string` | Title of movie to fetch recommendations for |
 
-###Title
+### Title
 
 Takes the name of the movie and returns the recommended movies with their Match Scores
 
-###Datasets Used
+### Datasets Used
 - [TMDB 5000 Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 - [The Indian Movie Database](https://www.kaggle.com/datasets/pncnmnp/the-indian-movie-database)
 
