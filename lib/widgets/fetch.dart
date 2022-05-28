@@ -29,12 +29,13 @@ class Movie {
   Future<List<Movie>> fetchMovies(String movie_title) async {
     final response = await http.get(Uri.parse(
         'https://bhanukhetharpal.pythonanywhere.com/movie?title=$movie_title'));
-
+    print(response.body);
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,
       // then parse the JSON.
-      final list = json.decode(response.body) as List<dynamic>;
-      //print(list);
+      print('I am here');
+      final list = jsonDecode(response.body) as List<dynamic>;
+      print(list);
       List<Movie> recmovies = [];
       recmovies = list.map<Movie>((json) => Movie.fromJson(json)).toList();
       print('fetching recommendations');

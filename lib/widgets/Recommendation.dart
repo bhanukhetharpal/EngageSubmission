@@ -58,7 +58,7 @@ class _RecommendationsState extends State<Recommendations> {
                 addVerticalSpace(10),
                   Text("Genres: ${snapshot.data![index].Genres}"),
                   addVerticalSpace(10),
-                 // Text("Match Score: ${snapshot.data![index].Match_Score}"),
+                 Text("Match Score: ${snapshot.data![index].Match_Score}"),
                 ],
               ),
             ),
