@@ -31,8 +31,10 @@
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 
 ## Algorithms Used 
--
-[PPT for Algorithm Explanation](https://www.canva.com/design/DAFCANVAQmo/zpe8ZLAlU48urNI9ZxWvNg/view?utm_content=DAFCANVAQmo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+- cosine_similarity
+- CountVectorizer
+- TfidfVectorizer
+[PPT for Algorithm Role Explanation](https://www.canva.com/design/DAFCANVAQmo/zpe8ZLAlU48urNI9ZxWvNg/view?utm_content=DAFCANVAQmo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Getting Started
 To install and run the project on your local system, following are the requirements:
