@@ -50,13 +50,14 @@ GIT, FLUTTER, Android Studio
 
 ## Navigating Through The App
 ### Home Screen
- ![Main Page](images/main.jpeg?raw=true)   ![Home Page](images/home.jpeg?raw=true) 
+ ![Main Page](images/main.jpeg?raw=true)     ![Home Page](images/home.jpeg?raw=true) 
 ### Movie and TV Shows Screen
 ![Tiles Page](images/tiles.jpeg?raw=true)
-![button Page](images/recommend.jpeg?raw=true)
+![button Page](images/recommend.png?raw=true)
 ### Description Tiles with Heart Button
 ![Descp Page](images/movie_tile.jpeg?raw=true)
-### Recommended Movies Screen 
+### Recommended Movies Screen
+![Recom Page](images/image.png?raw=true)
 
 ## API Reference
 Built the movie recommendation API using python and deployed on Python Anywhere. This API has at its centre the algorithm that I have used. 
