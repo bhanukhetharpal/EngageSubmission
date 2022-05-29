@@ -1,6 +1,6 @@
 # Recommendation App
 
-[Video Demo and Algorithm Explanation](http://bhanukhetharpal.pythonanywhere.com/movie?title=the%20godfather)
+[Video Demo and Algorithm Explanation](https://www.canva.com/design/DAFCAJyCcyU/bCgnGUEDOo2V8cyCaKzF6Q/watch?utm_content=DAFCAJyCcyU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## About The Project
 - Recommendation App built during Microsoft Engage 2022 program.
@@ -35,7 +35,7 @@
 - CountVectorizer
 - TfidfVectorizer
 
-[PPT for Algorithm Role Explanation](https://www.canva.com/design/DAFCANVAQmo/zpe8ZLAlU48urNI9ZxWvNg/view?utm_content=DAFCANVAQmo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[PPT for Algorithm Role Explanation](https://www.canva.com/design/DAFCANVAQmo/mrKHSsUqIKaDHAt5xezHOg/view?utm_content=DAFCANVAQmo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## Getting Started
 To install and run the project on your local system, following are the requirements:
