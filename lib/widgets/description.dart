@@ -7,18 +7,17 @@ class Description extends StatelessWidget {
   final String name, description, bannerurl, posterurl, vote, launch_on;
   final int movieid;
   //final List genres;
-  const Description(
-      {Key? key,
-      required this.name,
-      required this.description,
-      required this.bannerurl,
-      required this.posterurl,
-      required this.vote,
-      required this.launch_on,
-      required this.movieid,
-      //  required this.genres
-      })
-      : super(key: key);
+  const Description({
+    Key? key,
+    required this.name,
+    required this.description,
+    required this.bannerurl,
+    required this.posterurl,
+    required this.vote,
+    required this.launch_on,
+    required this.movieid,
+    //  required this.genres
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +40,7 @@ class Description extends StatelessWidget {
                 Positioned(
                     bottom: 10,
                     child: modified_text(
-                        text: '⭐ Average Rating -'+ vote,
+                        text: '⭐ Average Rating -' + vote,
                         size: 18.0,
                         color: Colors.white))
               ],
@@ -70,42 +69,29 @@ class Description extends StatelessWidget {
                 width: 100,
                 child: Image.network(posterurl),
               ),
-            Flexible(
-              child: Container(
-                child: modified_text(text: description, size: 18,color: Colors.white),
+              Flexible(
+                child: Container(
+                  child: modified_text(
+                      text: description, size: 18, color: Colors.white),
+                ),
               ),
-            ),
               addVerticalSpace(5),
-              // Container(
-              //   child: printgenres(genres,movieid),
-              // ),
             ],
           ),
-
-          ElevatedButton.icon(onPressed: (){
-            Globals.addData(name);
-            print(Globals.getMyFavMovies());
-           },
-            icon: const Icon(Icons.favorite, color: Colors.red,size: 24.0),
-            label: const Text(''),
+          ElevatedButton.icon(
+            onPressed: () {
+              Globals.addData(name);
+              print(Globals.getMyFavMovies());
+            },
+            icon: const Icon(Icons.favorite, color: Colors.red, size: 24.0),
+            label: const Text('Add to Favourites'),
+            style: ElevatedButton.styleFrom(
+              primary: Colors.grey[850], // set the background color
+            ), // set the background color
           ),
-
-
         ]),
       ),
     );
   }
 
-
-
-
-//   printgenres(List genres, String movieid) {
-//     //modified_text(text: 'Genres: ', size:16, color: Colors.green);
-//     for(int i = 0; i<3; i++){
-//       print(genres[movieid]['name']);
-//       //modified_text(text: ans , size:16, color: Colors.green);
-//     }
-//   }
- }
-
-
+}
