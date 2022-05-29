@@ -7,7 +7,11 @@ class Globals extends ChangeNotifier{
 
   }
 
-  static List<String> getMyFavMovies(){
+   static List<String> getMyFavMovies(){
+    if(favmovies.length==0){
+      List<String> ans = ['a','Like a Movie'];
+      return ans;
+    }
     return favmovies;
   }
 
