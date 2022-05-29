@@ -41,7 +41,6 @@ class _MoviesState extends State<Movies> {
       topratedmovies = topratedresult['results'];
       tv = tvresult['results'];
     });
-
   }
 
   @override
@@ -51,7 +50,9 @@ class _MoviesState extends State<Movies> {
       appBar: AppBar(
         backgroundColor: Colors.red[800],
         title: const modified_text(
-            text: 'Like Your Favourite Movies and TV Shows', size: 25.0, color: Colors.white),
+            text: 'Like Your Favourite Movies and TV Shows',
+            size: 25.0,
+            color: Colors.white),
         centerTitle: true,
       ),
       body: ListView(
@@ -60,14 +61,15 @@ class _MoviesState extends State<Movies> {
           TrendingMovies(trending: trendingmovies),
           TV(tv: tv),
           ElevatedButton(
-              onPressed: (){
-                Navigator.pushNamed(context, '/movies/recommendations');
-              }, child: modified_text(size: 20, text: 'Recommend Me Movies', color: Colors.white),
-              style:  ElevatedButton.styleFrom( primary: Colors.red[800]),
+            onPressed: () {
+              Navigator.pushNamed(context, '/movies/recommendations');
+            },
+            style: ElevatedButton.styleFrom(primary: Colors.red[800]),
+            child: modified_text(
+                size: 15, text: 'Because you liked ${Globals.getMyFavMovies().last.capitalize() }', color: Colors.white),
           ),
         ],
       ),
     );
   }
 }
-
