@@ -74,7 +74,7 @@ https://bhanukhetharpal.pythonanywhere.com/movie?title=$moviename
 | `title`      | `string` | Title of movie to fetch recommendations for |
 
 ### Title
-
+Replace $moviename with the movie you want to search
 Takes the name of the movie and returns the recommended movies with their Match Scores
 
 ### Datasets Used
