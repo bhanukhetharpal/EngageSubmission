@@ -1,6 +1,6 @@
 # Recommendation App
 
-[Video Demo and Algorithm Explanation](https://www.canva.com/design/DAFCAJyCcyU/t6Spl5Rm5g-_XY6yeCZEXg/watch?utm_content=DAFCAJyCcyU&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+[Video Demo and Algorithm Explanation](https://youtu.be/weSBr-iEMWY)
 
 ## About The Project
 - Recommendation App built during Microsoft Engage 2022 program.
